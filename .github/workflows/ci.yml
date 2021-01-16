@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # every 4 hours
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v*.*.*'
+  pull_request:
+
+jobs:
+  github-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Expose GitHub Runtime
+        uses: ./
+      -
+        name: Env
+        run: |
+          env|sort
