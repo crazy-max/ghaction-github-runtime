@@ -1,0 +1,5 @@
+/.dev
+/coverage
+/dist
+/lib
+/node_modules
