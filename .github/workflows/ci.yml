@@ -28,3 +28,31 @@ jobs:
         name: Env after
         run: |
           env|sort
+
+  go-actions-cache:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Expose GitHub Runtime
+        uses: ./
+      -
+        name: Env after
+        run: |
+          env|sort
+      -
+        name: Checkout go-actions-cache
+        uses: actions/checkout@v2
+        with:
+          repository: tonistiigi/go-actions-cache
+          path: go-actions-cache
+      -
+        name: Setup go
+        uses: actions/setup-go@v2
+      -
+        name: Test
+        run: |
+          go test -v .
+        working-directory: ./go-actions-cache
