@@ -18,9 +18,13 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
+        name: Env before
+        run: |
+          env|sort
+      -
         name: Expose GitHub Runtime
         uses: ./
       -
-        name: Env
+        name: Env after
         run: |
           env|sort
