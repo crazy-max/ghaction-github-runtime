@@ -1,0 +1,17 @@
+# https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
+name: 'GitHub Runtime'
+description: "GitHub Action to expose GitHub runtime to the workflow"
+author: 'crazy-max'
+branding:
+  color: 'red'
+  icon: 'eye'
+
+inputs:
+  github-token:
+    description: 'GitHub Token as provided by secrets'
+    default: ${{ github.token }}
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

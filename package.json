@@ -1,0 +1,34 @@
+{
+  "name": "github-runtime",
+  "description": "GitHub Action to expose GitHub runtime to the workflow",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc && ncc build",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "pre-checkin": "yarn run format && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazy-max/ghaction-github-runtime.git"
+  },
+  "keywords": [
+    "actions",
+    "github",
+    "runtime",
+    "runner"
+  ],
+  "author": "CrazyMax",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@vercel/ncc": "^0.24.1",
+    "prettier": "^2.0.4",
+    "typescript": "^4.0.3",
+    "typescript-formatter": "^7.2.2"
+  }
+}
