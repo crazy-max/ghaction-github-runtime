@@ -41,8 +41,10 @@ const core = __importStar(__webpack_require__(186));
 function exposeRuntime() {
     return __awaiter(this, void 0, void 0, function* () {
         Object.keys(process.env).forEach(function (key) {
-            core.info(`${key}=${process.env[key]}`);
-            core.exportVariable(key, process.env[key]);
+            if (key.startsWith('ACTIONS_')) {
+                core.info(`${key}=${process.env[key]}`);
+                core.exportVariable(key, process.env[key]);
+            }
         });
     });
 }
