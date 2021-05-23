@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2015",
+    "moduleResolution": "node",
     "module": "commonjs",
-    "lib": [
-      "es6",
-      "dom"
-    ],
     "newLine": "lf",
-    "outDir": "./lib",
     "rootDir": "./src",
     "strict": true,
     "noImplicitAny": false,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "sourceMap": true
   },
   "exclude": ["node_modules", "**/*.test.ts"]
