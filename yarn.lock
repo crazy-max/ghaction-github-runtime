@@ -5,10 +5,10 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@actions/core@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@actions/core@npm:1.3.0"
-  checksum: 8829af9595388018bb4eff5ebf74f868738f36a549305a7702bf0d872df0778a0bceae3b51e4a159dd698a775a5dd7efc676e811c28ce44602358c65750f150e
+"@actions/core@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@actions/core@npm:1.5.0"
+  checksum: e53f68721d09eec4b8b6f6e9d0399f7d296374ee284670641bb464f36e7ad87bca162848ed4ff38094105465cea7cdd48bb68f4942298aae2fd3fb7bf0fdf713
   languageName: node
   linkType: hard
 
@@ -457,7 +457,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "github-runtime@workspace:."
   dependencies:
-    "@actions/core": ^1.3.0
+    "@actions/core": ^1.5.0
     "@actions/github": ^5.0.0
     "@types/node": ^15.6.0
     "@vercel/ncc": ^0.28.5
