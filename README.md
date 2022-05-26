@@ -31,7 +31,7 @@ jobs:
     steps:
       -
         name: Expose GitHub Runtime
-        uses: crazy-max/ghaction-github-runtime@v1
+        uses: crazy-max/ghaction-github-runtime@v2
       -
         name: Env
         run: |
