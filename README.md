@@ -1,14 +1,12 @@
 [![GitHub release](https://img.shields.io/github/release/crazy-max/ghaction-github-runtime.svg?style=flat-square)](https://github.com/crazy-max/ghaction-github-runtime/releases/latest)
 [![GitHub marketplace](https://img.shields.io/badge/marketplace-github--runtime-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/github-runtime)
-[![CI workflow](https://img.shields.io/github/workflow/status/crazy-max/ghaction-dockerhub-mirror/ci?label=ci&logo=github&style=flat-square)](https://github.com/crazy-max/ghaction-dockerhub-mirror/actions?workflow=test)
+[![CI workflow](https://img.shields.io/github/actions/workflow/status/crazy-max/ghaction-dockerhub-mirror/ci.yml?branch=master&label=ci&logo=github&style=flat-square)](https://github.com/crazy-max/ghaction-dockerhub-mirror/actions?workflow=test)
 [![Become a sponsor](https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square)](https://github.com/sponsors/crazy-max)
 [![Paypal Donate](https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square)](https://www.paypal.me/crazyws)
 
 ## About
 
 GitHub Action to expose GitHub runtime to the workflow
-
-If you are interested, [check out](https://github.com/crazy-max?tab=repositories&q=ghaction&type=source&language=&sort=) my other :octocat: GitHub Actions!
 
 ___
 
