@@ -1,8 +1,12 @@
 name: ci
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   schedule:
-    - cron: '0 */4 * * *' # every 4 hours
+    - cron: '0 */4 * * *'
   push:
     branches:
       - '**'
