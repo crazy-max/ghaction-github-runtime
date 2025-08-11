@@ -24,7 +24,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       -
         name: Env before
         run: |
@@ -42,7 +42,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       -
         name: Expose GitHub Runtime
         uses: ./
@@ -52,7 +52,7 @@ jobs:
           env|sort
       -
         name: Checkout go-actions-cache
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: tonistiigi/go-actions-cache
           path: go-actions-cache
