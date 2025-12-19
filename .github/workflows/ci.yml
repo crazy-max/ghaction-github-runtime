@@ -58,7 +58,7 @@ jobs:
           path: go-actions-cache
       -
         name: Setup go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
       -
         name: Test
         run: |
