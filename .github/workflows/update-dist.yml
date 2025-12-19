@@ -1,0 +1,16 @@
+name: update-dist
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  update-dist:
+    if: github.actor == 'dependabot[bot]'
+    uses: docker/actions-toolkit/.github/workflows/action-dist-update.yml@action-dist-update
+    permissions:
+      contents: write
+    with:
+      bake-target: build
