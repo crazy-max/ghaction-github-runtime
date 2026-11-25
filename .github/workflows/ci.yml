@@ -19,7 +19,7 @@ on:
 
 jobs:
   github-runtime:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       -
         name: Checkout
@@ -37,7 +37,7 @@ jobs:
           env|sort
 
   go-actions-cache:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       -
         name: Checkout
